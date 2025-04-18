@@ -1,23 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Airbnb Clone</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Airbnb Clone - Home</title>
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
     <header>
-        <h1>Welcome to Airbnb Clone</h1>
+        <nav class="navbar">
+            <div class="logo">Airbnb Clone</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="listings.html">Listings</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn-login">Log in</button>
+                <button class="btn-signup">Sign up</button>
+            </div>
+        </nav>
     </header>
     <main>
-        <section>
+        <section class="hero">
+            <h1>Find your next stay</h1>
+            <p>Discover unique places to stay around the world.</p>
+            <input type="text" placeholder="Where are you going?" class="search-input" />
+        </section>
+        <section class="featured-listings">
             <h2>Featured Listings</h2>
-            <!-- Placeholder for listings -->
+            <div class="listings-grid">
+                <article class="listing-card">
+                    <img src="images/listing1.jpg" alt="Cozy apartment in New York" />
+                    <div class="listing-info">
+                        <h3>Cozy Apartment in New York</h3>
+                        <p>2 guests · 1 bedroom · 1 bed · 1 bath</p>
+                        <p class="price">$120 / night</p>
+                    </div>
+                </article>
+                <article class="listing-card">
+                    <img src="images/listing2.jpg" alt="Modern loft in San Francisco" />
+                    <div class="listing-info">
+                        <h3>Modern Loft in San Francisco</h3>
+                        <p>4 guests · 2 bedrooms · 2 beds · 2 baths</p>
+                        <p class="price">$200 / night</p>
+                    </div>
+                </article>
+                <article class="listing-card">
+                    <img src="images/listing3.jpg" alt="Beach house in Miami" />
+                    <div class="listing-info">
+                        <h3>Beach House in Miami</h3>
+                        <p>6 guests · 3 bedrooms · 3 beds · 2 baths</p>
+                        <p class="price">$350 / night</p>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 Airbnb Clone</p>
+        <p>&copy; 2023 Airbnb Clone. All rights reserved.</p>
     </footer>
     <script src="js/scripts.js"></script>
 </body>
